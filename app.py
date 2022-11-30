@@ -31,14 +31,14 @@ st.write(df.to_dict())
 #Processing
 st.subheader('Result')
 
-firstNumber = df['firstNumber']
-secNumber = df['secondNumber']
-thirdNumber = df['thirdNumber']
-res = [firstNumber, secNumber, thirdNumber].max()
-st.write(res)
-# if ((df['firstNumber'] > df['secondNumber']) & (df['firstNumber'] > df['thirdNumber'])):
-#     st.write(df['firstNumber'] +' is the greatest number.')
-# elif ((df['secondNumber'] > df['firstNumber']) & (df['secondNumber'] > df['thirdNumber'])):
-#     st.write(df['secondNumber'] +' is the greatest number.')
-# else:
-#     st.write(df['thirdNumber'] +' is the greatest number.')
+# firstNumber = df['firstNumber']
+# secNumber = df['secondNumber']
+# thirdNumber = df['thirdNumber']
+# res = [firstNumber, secNumber, thirdNumber].max()
+# st.write(res)
+if ((df['firstNumber'] > df['secondNumber']) & (df['firstNumber'] > df['thirdNumber'])):
+    st.write(df['firstNumber'] +' is the greatest number.')
+elif ((df['secondNumber'] > df['firstNumber']) & (df['secondNumber'] > df['thirdNumber'])):
+    st.write(df['secondNumber'] +' is the greatest number.')
+else:
+    st.write(df['thirdNumber'] +' is the greatest number.')
