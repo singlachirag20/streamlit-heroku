@@ -37,8 +37,8 @@ st.subheader('Result')
 # res = [firstNumber, secNumber, thirdNumber].max()
 # st.write(res)
 if ((df['firstNumber'] > df['secondNumber']) & (df['firstNumber'] > df['thirdNumber'])):
-    st.write(df['firstNumber'] +' is the greatest number.')
+    st.write(df['firstNumber'])
 elif ((df['secondNumber'] > df['firstNumber']) & (df['secondNumber'] > df['thirdNumber'])):
-    st.write(df['secondNumber'] +' is the greatest number.')
+    st.write(df['secondNumber'])
 else:
-    st.write(df['thirdNumber'] +' is the greatest number.')
+    st.write(df['thirdNumber'])
